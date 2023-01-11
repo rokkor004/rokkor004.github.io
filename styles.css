@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-size: cover;
+    background-color: rgb(23, 22, 26);
+}
+
+.main-header {
+    font-size: 3em;
+}
+
+
+.nav ul {
+    display: inline-block;
+    text-align: center;
+    color: crimson;
+}
+
+.nav li {
+    display: inline-block;
+    text-align: center;
+    color: crimson;
+}
+
+.nav a {
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
