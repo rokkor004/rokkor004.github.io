@@ -78,7 +78,7 @@ html, body{
     background: #009688;
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: 0px;
     transition: 0.5s;
 }
 
