@@ -3,12 +3,12 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    color: grey;
+    color: rgb(128, 128, 128);
 }
 
 body {
     margin: 0;
-    background: rbg(30, 33, 33);
+    background: rgb(30, 30, 30);
 }
 
 .image-grid {
@@ -68,7 +68,7 @@ html, body{
 
 .navbar ul li a {
     text-decoration: none;
-    color: grey;
+    color: gray;
     text-transform: uppercase;
 }
 
