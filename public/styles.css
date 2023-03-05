@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  background-color: whitesmoke;
+}
+
+.banner {
+  width: 100%;
+  height: 15vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),(rgba(0,0,0,0.75)), url(PEMBG1.jpg));
+  background-size: cover;
+  background-position: center;
+  font-size: 2em;
+  display: inline-block;
+}
+
+button {
+  padding: 10px;
+  width: 70px;
+  color: white;
+  font-family: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: black;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.app {
+  max-width: 1224px;
+  width: 92%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.header h2 {
+  min-width: fit-content;
+}
+
+.server-message {
+  width: 100%;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.input-div {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px dotted black;
+  background-color: white;
+  position: relative;
+}
+
+.input-div .browse {
+  color: black;
+  font-weight: bold;
+}
+
+.file {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.saved-div,
+.queued-div {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: relative;
+  border-radius: 5px;
+  border: 2px dotted black;
+  background-color: white;
+}
+
+.saved-div .image,
+.queued-div .image {
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+}
+
+.saved-div .image:nth-child(4n),
+.queued-div .image:nth-child(4n) {
+  margin-right: 0;
+}
+
+.saved-div .image img,
+.queued-div .image img {
+  height: 100%;
+  width: 100%;
+}
+
+.saved-div .image span,
+.queued-div .image span {
+  position: absolute;
+  top: -4px;
+  right: 4px;
+  cursor: pointer;
+  font-size: 22px;
+  color: white;
+}
+
+.saved-div .image span:hover,
+.queued-div .image span:hover {
+  opacity: 0.8;
+}
+
+.saved-div .span--hidden,
+.queued-div .span--hidden {
+  visibility: hidden;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+}
+
+.logo {
+    width: 150px;
+}
+
+.navbar ul li {
+    list-style: none;;
+    display: inline-block;
+    margin: 0, 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
